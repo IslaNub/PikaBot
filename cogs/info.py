@@ -54,7 +54,7 @@ class info:
         embed.add_field(name="ID", value=user.id, inline=True)
         embed.add_field(name="Status", value=user.status, inline=True)
         embed.add_field(name="Game", value=str(user.activity))
-        roles = [x.name for x in user.roles[1:]]
+        Roles = [x.name for x in user.roles[1:]]
         embed.add_field(name="Roles", value=roles, inline=True)
         embed.add_field(name="Joined", value=user.joined_at)
         embed.set_thumbnail(url=user.avatar_url)
